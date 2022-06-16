@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+header, footer{
+    background-color: rgb(100, 100, 235);
+    color: aqua;
+
+}
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 32px;
+}
+
+.menu{
+    color: #87cefa;
+    font-size: 19px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-link{
+    border-bottom: 3px solid transparent;
+    padding: 15px 10px;
+    display: block;
+}
+.menu-link:hover{
+    border-bottom: 3px solid orange;
+    color: orange;
+}
+.new-films{
+    margin-top: 30px;
+}
+.section-title{
+    margin-bottom: 15px;
+    color: rgb(100, 100, 235);
+    font-weight: bold;
+}
+.new-films-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.new-films-link{
+    display: block;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+    padding: 5px;
+    position: relative;
+}
+.new-films-link:hover{
+    box-shadow: 5px 5px 5px 5px grey;
+}
+.new-films-img{
+    height: 350px;
+}
+.new-films-name{
+    margin-top: 10px;
+    color: rgb(100, 100, 235);
+    font-weight: bold;
+}
+.new-films-desc{
+    display: flex;
+    color: rgb(100, 100, 235);
+}
+.new-films-year{
+    margin-right: 5px;
+    color: rgb(100, 100, 235);
+}
+.new-films-year::after{
+    content: ',';
+    color: rgb(100, 100, 235);
+}
+.recommended{
+    margin-top: 30px;
+}
+footer{
+    margin-top: 150px;
+}
+.social{
+    display: flex;
+    width: 5%;
+    justify-content: space-between;
+}
+.social-item{
+    border-bottom: 1px solid transparent;
+}
+.social-item:hover{
+    border-bottom: 1px solid aqua;
+}
+.new-films-link::before{
+    content: attr(id);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-15%, 45%);
+    background-color: green;
+    padding: 0 5px;
+}
